@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherCast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WeatherCast</h1>
+        <div class="location-selector">
+            <select id="countrySelect">
+                <option value="">Select Country</option>
+            </select>
+            
+            <select id="stateSelect" disabled>
+                <option value="">Select State</option>
+            </select>
+            
+            <select id="citySelect" disabled>
+                <option value="">Select City</option>
+            </select>
+            
+            <button id="getWeather">Get Weather</button>
+        </div>
+
+        <div class="weather-info" id="weatherInfo">
+            <div class="weather-card hidden">
+                <div class="error-message hidden"></div>
+                <div class="weather-content">
+                    <h2 class="city-name"></h2>
+                    <div class="weather-main">
+                        <img class="weather-icon" src="" alt="Weather Icon">
+                        <div class="temperature"></div>
+                    </div>
+                    <div class="weather-details">
+                        <p class="description"></p>
+                        <p class="humidity"></p>
+                        <p class="wind-speed"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
